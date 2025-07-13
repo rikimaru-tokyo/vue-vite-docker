@@ -49,11 +49,9 @@ services:
       - 5173:5173
     volumes:
       - .:/app
-    # TODO: 下記の起動確認完了後、コメントアウトを外す
-    # command: >
-    #   sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    # TODO: 下記の起動確認完了後、コメントアウトを外す(docker compose buildでリビルドしないとサーバー立ち上がらない)
+    command:  sh -c "npm install && npm run dev -- --host 0.0.0.0"
     tty: true
-
 
 ```
 
