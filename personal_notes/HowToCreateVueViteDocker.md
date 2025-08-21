@@ -1,7 +1,7 @@
 # Docker+Vite+Vueで作るフロントエンド環境
 
-
-- Docker + Vite + Vue3でSPA作成
+- 参考資料
+  - Docker + Vite + Vue3でSPA作成
     - https://zenn.dev/c6tower/scraps/d5b82f5b6d4166
 
 ---
@@ -25,7 +25,7 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-# TODO: vite project作成後、コメントアウトを外す
+# TODO: vite project作成後、下記3行のコメントアウトを外す
 # COPY ./vite-project/package*.json /app/vite-project/
 # WORKDIR /app/vite-project
 # RUN npm install
@@ -73,7 +73,7 @@ docker exec -it sample-app sh
 
 # コンテナ内での作業
 $ npm create vite@latest
-# create-vite@6.0.1 時点の雪面
+# create-vite@6.0.1 時点
 # 設問その1. プロジェクト作成を進めて良いか？
 # 設問その2. プロジェクト名の入力: 今回は `vite-project`
 # 設問その3. フレームワークの選択: 今回は `vue` を選択
@@ -87,20 +87,30 @@ $ npm run dev -- --host 0.0.0.0
 ```
 
 
-## ビルド後の``
-
-
-
-
-
-
 
 ---
 
-## cf. Viteの公式ドキュメント
+# cf. Viteの公式ドキュメント
 
 https://ja.vite.dev/guide/
 
 
+# vanilla.js
+
+- ネイティブJSフレームワークのこと
+  - https://www.webdesignleaves.com/pr/jquery/javaascript_01.html
+
+<br>
+
+---
+---
+---
+
+<br>
+
+[END]
+
+
+[← READMEへ](../README.md)
 
 
